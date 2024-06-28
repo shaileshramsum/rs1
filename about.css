@@ -1,84 +1,32 @@
-/* General Styles */
-* {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Header Styles */
-header {
-    background-color: #35424a;
-    color: #ffffff;
+header, footer {
+    background-color: #333;
+    color: white;
     padding: 10px 0;
 }
 
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.container {
+    width: 80%;
+    margin: auto;
 }
 
-header .logo img {
-    height: 50px;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-}
-
-header nav ul li {
-    margin-left: 20px;
-}
-
-header nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-header nav ul li a:hover {
-    color: #e8491d;
-}
-
-/* About Section */
 .about {
-    padding: 80px 0;
-}
-
-.about h1 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.about p {
-    text-align: center;
-    font-size: 1.2rem;
-    margin: 0 auto;
-    max-width: 800px;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #35424a;
-    color: #ffffff;
-    text-align: center;
     padding: 20px 0;
+    text-align: center;
 }
 
-footer p {
-    margin: 0;
+.media-gallery {
+    margin-top: 20px;
+}
+
+.video, .photo {
+    display: inline-block;
+    margin: 10px;
+    width: 200px;
+    height: auto;
 }
