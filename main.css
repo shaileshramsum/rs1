@@ -1,84 +1,55 @@
-/* Reset and General Styles */
-* {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Header Styles */
 header {
-    background-color: #35424a;
-    color: #ffffff;
+    background-color: #333;
+    color: white;
     padding: 10px 0;
 }
 
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.container {
+    width: 80%;
+    margin: auto;
 }
 
-header .logo img {
-    height: 50px;
-}
-
-header nav ul {
+nav ul {
     list-style: none;
-    display: flex;
+    padding: 0;
 }
 
-header nav ul li {
-    margin-left: 20px;
+nav ul li {
+    display: inline;
+    margin-right: 15px;
 }
 
-header nav ul li a {
-    color: #ffffff;
+nav ul li a {
+    color: white;
     text-decoration: none;
-    font-weight: bold;
 }
 
-header nav ul li a:hover {
-    color: #e8491d;
-}
-
-/* Hero Section */
 .hero {
-    background: url('images/hero.jpg') no-repeat center center/cover;
-    color: #ffffff;
-    padding: 100px 0;
+    background-color: #f4f4f4;
+    padding: 50px 0;
     text-align: center;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+.media-gallery {
+    margin-top: 20px;
 }
 
-.hero p {
-    font-size: 1.2rem;
+.video, .photo {
+    display: inline-block;
+    margin: 10px;
+    width: 200px;
+    height: auto;
 }
 
-/* Footer Styles */
 footer {
-    background-color: #35424a;
-    color: #ffffff;
+    background-color: #333;
+    color: white;
     text-align: center;
-    padding: 20px 0;
-}
-
-footer p {
-    margin: 0;
+    padding: 10px 0;
 }
