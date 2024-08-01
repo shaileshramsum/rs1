@@ -3,37 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="About Ramsum Creatives">
-    <title>About Us - Ramsum Creatives</title>
-    <link rel="stylesheet" href="css/about.css">
+    <title>Ramsum - Learn Google My Business</title>
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        /* Add more styles as needed */
+    </style>
 </head>
 <body>
-    <header>
-        <!-- Same header as index.html -->
-    </header>
-
-    <main>
-        <section class="about">
-            <div class="container">
-                <h1>About Us</h1>
-                <p>We, Ramsum Creatives, are a joint venture of Shaurya Studios (Mumbai) & BSIW Production Pvt Ltd with Twig Designs. We are a Marketing, Advertising, and Video Production Company. We have worked with brands like MDH, DS Group, and more.</p>
-                <div class="media-gallery">
-                    <h2>Our Journey</h2>
-                    <div class="video">
-                        <video src="videos/about1.mp4" controls></video>
-                    </div>
-                    <div class="photo">
-                        <img src="images/about1.jpg" alt="About Us Photo 1">
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <!-- Same footer as index.html -->
-    </footer>
-
-    <script src="js/about.js"></script>
+    <div class="container">
+        <h1>Welcome to Ramsum</h1>
+        <p>Your trusted partner for web design and digital marketing courses.</p>
+        <hr>
+        <h2>Course Details</h2>
+        <p>Learn Google My Business and boost your online presence!</p>
+        <p>Course Fee: ₹499 (Limited-time offer! Prices will increase soon.)</p>
+        <p>After completing the course:</p>
+        <ul>
+            <li>We'll help business owners achieve their goals.</li>
+            <li>We'll conduct a test, and successful candidates may get internship/job offers.</li>
+        </ul>
+        <hr>
+        <h2>Enroll Now</h2>
+        <form action="process_payment.php" method="post">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="number" name="age" placeholder="Age" required>
+            <select name="job" required>
+                <option value="business">Business Owner</option>
+                <option value="job">Working Professional</option>
+                <option value="student">Student</option>
+            </select>
+            <input type="text" name="city" placeholder="City" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <!-- Add UPI payment options here -->
+            <button type="submit">Pay ₹499 via UPI</button>
+        </form>
+        <hr>
+        <h2>Testimonials</h2>
+        <p>"Ramsum's course transformed my business!" - John Doe</p>
+        <p>"Highly recommended for professionals." - Jane Smith</p>
+    </div>
 </body>
 </html>
