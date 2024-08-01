@@ -1,67 +1,98 @@
-/* Reset default styles */
-* {
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f5f5f5;
 }
 
-/* Body styles */
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-/* Header styles */
-header {
-    background-color: #45413E;
-    color: #ffffff;
+.container {
+    width: 80%;
+    margin: 0 auto;
     padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-#logo {
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-
-/* Hero section styles */
-.hero {
-    background-image: url('path/to/your-image.jpg');
-    background-size: cover;
-    color: #ffffff;
-    padding: 100px 0;
+header {
     text-align: center;
+    padding: 20px;
+    background-color: #005f73;
+    color: #fff;
 }
 
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
 }
 
-.btn-group {
-    margin-top: 20px;
+header p {
+    margin: 10px 0 0;
 }
 
-.btn-filled-dark {
-    background-color: #45413E;
-    color: #ffffff;
+section {
+    margin: 20px 0;
+}
+
+section h2 {
+    font-size: 1.8em;
+    color: #005f73;
+    border-bottom: 2px solid #005f73;
+    padding-bottom: 5px;
+}
+
+section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.payment-info p {
+    color: #d90429;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+form input, form select {
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
     padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #005f73;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-/* Other section styles (add as needed) */
-
-/* Footer styles */
-footer {
-    background-color: #45413E;
-    color: #ffffff;
-    padding: 20px;
+form button:hover {
+    background-color: #004346;
 }
 
-/* Add more styles for other sections as required */
+.testimonials p {
+    background-color: #e6f4f1;
+    padding: 10px;
+    border-left: 4px solid #005f73;
+}
 
-/* Responsive styles (media queries) */
-@media screen and (max-width: 768px) {
-    /* Adjust styles for smaller screens */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #005f73;
+    color: #fff;
+    margin-top: 20px;
 }
